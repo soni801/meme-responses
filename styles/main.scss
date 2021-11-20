@@ -1,0 +1,56 @@
+/* STYLESHEET TABLE OF CONTENTS
+    1 Global
+        1.1 Imports
+        1.2 Global styling
+    2 Page sections
+        2.1 Introduction
+        2.2 Responses
+ */
+
+// 1.1 Imports
+@use "global";
+
+// 1.2 Global styling
+* { margin: 0; }
+
+body
+{
+    background: global.$dark;
+    color: global.$light;
+}
+
+// 2.1 Introduction
+#introduction
+{
+    font-family: 'Rubik', sans-serif;
+}
+
+// 2.2 Responses
+#response-list
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+    gap: 3rem;
+
+    div // Individual responses in list
+    {
+        max-width: 20rem;
+        height: max-content;
+        background: rgba(global.$light, .1);
+        border-radius: 1rem;
+
+        img
+        {
+            width: 100%;
+            transform: translate(-1.5rem, 1.5rem);
+            border-radius: 1rem;
+        }
+
+        h3
+        {
+            padding: 2rem 1rem 1rem;
+        }
+    }
+}

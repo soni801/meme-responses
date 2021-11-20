@@ -34,7 +34,7 @@ body
     font-family: 'Quicksand', sans-serif;
     gap: 3rem;
 
-    div // Individual responses in list
+    .response // Individual responses in list
     {
         max-width: 20rem;
         height: max-content;
@@ -48,9 +48,17 @@ body
             border-radius: 1rem;
         }
 
-        h3
+        div // Title + copy button
         {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             padding: 2rem 1rem 1rem;
+
+            .copy-button
+            {
+                stroke: global.$light;
+            }
         }
     }
 }

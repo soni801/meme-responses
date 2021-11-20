@@ -48,7 +48,7 @@ body
             border-radius: 1rem;
         }
 
-        div // Title + copy button
+        div // Response content (excluding image)
         {
             display: flex;
             align-items: center;
@@ -57,7 +57,29 @@ body
 
             .copy-button
             {
+                position: relative;
                 stroke: global.$light;
+                transition: 100ms ease;
+
+                &:hover
+                {
+                    stroke: rgba(global.$light, .7);
+
+                    &::before
+                    {
+                        position: absolute;
+                        top: -2.2rem;
+                        left: 50%;
+                        content: 'Copy';
+                        padding: .3rem .5rem;
+                        background: rgba(global.$light, .8);
+                        color: global.$dark;
+                        border-radius: .3rem;
+                        transform: translateX(-50%);
+                    }
+                }
+
+                &:active { stroke: rgba(global.$light, .3); }
             }
         }
     }

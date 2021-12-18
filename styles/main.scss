@@ -17,6 +17,7 @@ body
 {
     background: global.$dark;
     color: global.$light;
+    padding: 2rem;
 }
 
 // 2.1 Introduction
@@ -28,11 +29,9 @@ body
 // 2.2 Responses
 #response-list
 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    margin: 2rem;
     font-family: 'Quicksand', sans-serif;
-    gap: 3rem;
+    columns: 10 22rem;
 
     .response // Individual responses in list
     {
@@ -40,6 +39,8 @@ body
         height: max-content;
         background: rgba(global.$light, .1);
         border-radius: 1rem;
+        margin-bottom: 2rem;
+        break-inside: avoid-column;
 
         img
         {

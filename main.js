@@ -23,7 +23,7 @@ fetch("/responses.json").then(r => r.json()).then(responses => responses.forEach
     {
         e.addEventListener("click", () =>
         {
-            navigator.clipboard.writeText(e.getAttribute("content"));
+            navigator.clipboard.writeText(e.getAttribute("content")).then(() => console.log("Copied to clipboard"));
         });
     });
 });

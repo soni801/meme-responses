@@ -4,7 +4,8 @@
         1.2 Global styling
     2 Page sections
         2.1 Introduction
-        2.2 Responses
+        2.2 Search
+        2.3 Responses
  */
 
 // 1.1 Imports
@@ -26,7 +27,28 @@ body
     font-family: 'Rubik', sans-serif;
 }
 
-// 2.2 Responses
+// 2.2 Search
+#search
+{
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 1.5rem;
+
+    input
+    {
+        background: darken(global.$dark, 5);
+        border: none;
+        padding: .5rem 1rem;
+        color: global.$light;
+        border-radius: .5rem;
+        box-shadow: darken(global.$dark, 7) 0 0 1rem;
+    }
+}
+
+// 2.3 Responses
 #response-list
 {
     margin: 2rem -2rem 2rem 2rem;
@@ -35,12 +57,12 @@ body
 
     .response // Individual responses in list
     {
+        display: inline-block;
         max-width: 20rem;
         height: max-content;
         background: rgba(global.$light, .1);
         border-radius: 1rem;
         margin-bottom: 2rem;
-        break-inside: avoid-column;
 
         img
         {

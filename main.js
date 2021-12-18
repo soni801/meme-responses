@@ -1,10 +1,31 @@
 // Define document elements
+const searchField = document.querySelector("#search-field");
 const responseList = document.querySelector("#response-list");
 
-fetch("/responses.json").then(r => r.json()).then(responses => responses.forEach(response =>
+let allResponses;
+
+// Load page
+searchField.value = "";
+
+fetch("/responses.json").then(r => r.json()).then(responses =>
+{
+    allResponses = responses;
+    loadResponses(allResponses);
+});
+
+// Dynamically filter
+searchField.addEventListener("keyup", () =>
+{
+    responseList.innerHTML = "";
+    loadResponses(allResponses.filter(r => r.name.toLowerCase().includes(searchField.value.toLowerCase())));
+});
+
+function loadResponses(list)
 {
     // Load responses
-    responseList.innerHTML += `
+    list.forEach(response =>
+    {
+        responseList.innerHTML += `
         <div id="${response.id}" class="response">
             <img src="${response.src}" alt="${response.name}">
             <div>
@@ -13,8 +34,8 @@ fetch("/responses.json").then(r => r.json()).then(responses => responses.forEach
             </div>
         </div>
     `;
-})).then(() =>
-{
+    });
+
     // Load copy button
     $(".copy-button").load("/assets/icons/copy.svg");
 
@@ -26,4 +47,4 @@ fetch("/responses.json").then(r => r.json()).then(responses => responses.forEach
             navigator.clipboard.writeText(e.getAttribute("content")).then(() => console.log("Copied to clipboard"));
         });
     });
-});
+}

@@ -30,7 +30,7 @@ function loadResponses(list)
             <img src="${response.src}" alt="${response.name}">
             <div>
                 <h3>${response.name}</h3>
-                <span class="copy-button" content="${response.src}"></span>
+                <span class="copy-button" data-content="https://r.yessness.com/${response.id}"></span>
             </div>
         </div>
     `;
@@ -44,7 +44,7 @@ function loadResponses(list)
     {
         e.addEventListener("click", () =>
         {
-            navigator.clipboard.writeText(e.getAttribute("content")).then(() => console.log("Copied to clipboard"));
+            navigator.clipboard.writeText(e.getAttribute("data-content")).then(() => console.log("Copied to clipboard"));
         });
     });
 }

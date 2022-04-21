@@ -57,7 +57,7 @@ body
 
     .response // Individual responses in list
     {
-        display: inline-block;
+        display: inline-grid;
         max-width: 20rem;
         height: max-content;
         background: rgba(global.$light, .1);

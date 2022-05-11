@@ -16,9 +16,9 @@
 
 body
 {
-    background: global.$dark;
-    color: global.$light;
     padding: 2rem;
+    color: global.$light;
+    background: global.$dark;
 }
 
 // 2.1 Introduction
@@ -30,21 +30,23 @@ body
 // 2.2 Search
 #search
 {
-    font-family: 'Rubik', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
     padding-top: 1.5rem;
+    font-family: 'Rubik', sans-serif;
 
-    input
+    #search-field
     {
-        background: darken(global.$dark, 5);
-        border: none;
+        width: 15rem;
         padding: .5rem 1rem;
         color: global.$light;
+        background: darken(global.$dark, 5);
+        border: none;
         border-radius: .5rem;
         box-shadow: darken(global.$dark, 7) 0 0 1rem;
+        line-height: 2em;
     }
 }
 
@@ -52,17 +54,17 @@ body
 #response-list
 {
     margin: 2rem -2rem 2rem 2rem;
-    font-family: 'Quicksand', sans-serif;
     columns: 10 22rem;
+    font-family: 'Quicksand', sans-serif;
 
     .response // Individual responses in list
     {
         display: inline-grid;
-        max-width: 20rem;
+        width: 20rem;
         height: max-content;
+        margin-bottom: 2rem;
         background: rgba(global.$light, .1);
         border-radius: 1rem;
-        margin-bottom: 2rem;
 
         img
         {
@@ -71,12 +73,21 @@ body
             border-radius: 1rem;
         }
 
-        div // Response content (excluding image)
+        .context // Response content (excluding image)
         {
             display: flex;
             align-items: center;
             justify-content: space-between;
             padding: 0 1rem 1rem;
+
+            .naming
+            {
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+
+                code { opacity: .6; }
+            }
 
             .copy-button
             {
@@ -90,13 +101,13 @@ body
 
                     &::before
                     {
+                        content: 'Copy';
                         position: absolute;
                         top: -2.2rem;
                         left: 50%;
-                        content: 'Copy';
                         padding: .3rem .5rem;
-                        background: rgba(global.$light, .8);
                         color: global.$dark;
+                        background: rgba(global.$light, .8);
                         border-radius: .3rem;
                         transform: translateX(-50%);
                     }

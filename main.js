@@ -28,8 +28,11 @@ function loadResponses(list)
         responseList.innerHTML += `
         <div id="${response.id}" class="response">
             <img src="${response.src}" alt="${response.name}">
-            <div>
-                <h3>${response.name}</h3>
+            <div class="context">
+                <div class="naming">
+                    <code>${response.id}</code>
+                    <h3>${response.name}</h3>
+                </div>
                 <span class="copy-button" data-content="https://r.yessness.com/${response.id}"></span>
             </div>
         </div>

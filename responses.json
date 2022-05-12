@@ -253,5 +253,20 @@
         "name": "All right, then. Keep your secrets.",
         "id": "keep-your-secrets",
         "src": "https://cdn.discordapp.com/attachments/910634449518071908/973963289098874921/unknown.png"
+    },
+    {
+        "name": "No maidens?",
+        "id": "no-maidens",
+        "src": "https://cdn.discordapp.com/attachments/910634449518071908/974347090325037096/unknown.png"
+    },
+    {
+        "name": "Shut",
+        "id": "shut",
+        "src": "https://cdn.discordapp.com/attachments/910634449518071908/974347512955691028/IMG_2256.jpg"
+    },
+    {
+        "name": "Understandable. Have a great day",
+        "id": "understandable-have-a-great-day",
+        "src": "https://cdn.discordapp.com/attachments/910634449518071908/974348459463311460/unknown.png"
     }
 ]

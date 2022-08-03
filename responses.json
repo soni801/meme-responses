@@ -165,11 +165,6 @@
         "src": "https://cdn.discordapp.com/attachments/910634449518071908/921768762192056420/cover5.png"
     },
     {
-        "name": "Haugenstua",
-        "id": "haugenstua",
-        "src": "https://cdn.discordapp.com/attachments/910634449518071908/921769505837961246/unknown.png"
-    },
-    {
         "name": "Give me your phone so you never embarrass yourself like that again",
         "id": "never-embarrass-yourself-like-that",
         "src": "https://cdn.discordapp.com/attachments/910634449518071908/921769807886569513/unknown.png"
@@ -268,5 +263,35 @@
         "name": "Understandable. Have a great day",
         "id": "understandable-have-a-great-day",
         "src": "https://cdn.discordapp.com/attachments/910634449518071908/974348459463311460/unknown.png"
+    },
+    {
+        "name": "If it isn't the consequences of my own actions",
+        "id": "consequences",
+        "src": "https://media.discordapp.net/attachments/910634449518071908/984194685151113226/IMG_4575.jpg"
+    },
+    {
+        "name": "We are hitting intelligence levels that shouldn't be possible",
+        "id": "intelligence",
+        "src": "https://media.discordapp.net/attachments/910634449518071908/1004319420442738749/IMG_1233.jpg"
+    },
+    {
+        "name": "I'm right, you're free to have a wrong opinion",
+        "id": "im-right",
+        "src": "https://media.discordapp.net/attachments/910634449518071908/1004320093045534740/RDT_20220501_1622126892292385641479879.jpg"
+    },
+    {
+        "name": "I shouldn't have said that",
+        "id": "should-not-have-said-that",
+        "src": "https://media.discordapp.net/attachments/910634449518071908/1004320793204891678/unknown.png"
+    },
+    {
+        "name": "Listen here, you little shit",
+        "id": "listen-here",
+        "src": "https://media.discordapp.net/attachments/910634449518071908/1004321807718948895/unknown.png"
+    },
+    {
+        "name": "That's what a gay person would say",
+        "id": "what-a-gay-person-would-say",
+        "src": "https://media.discordapp.net/attachments/910634449518071908/1004322435207811172/unknown.png"
     }
 ]

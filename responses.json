@@ -266,7 +266,7 @@
     },
     {
         "name": "If it isn't the consequences of my own actions",
-        "id": "consequences",
+        "id": "consequences-of-my-own-actions",
         "src": "https://media.discordapp.net/attachments/910634449518071908/984194685151113226/IMG_4575.jpg"
     },
     {
@@ -293,5 +293,20 @@
         "name": "That's what a gay person would say",
         "id": "what-a-gay-person-would-say",
         "src": "https://media.discordapp.net/attachments/910634449518071908/1004322435207811172/unknown.png"
+    },
+    {
+        "name": "Well yes, but actually no",
+        "id": "well-yes-but-actually-no",
+        "src": "https://media.discordapp.net/attachments/910634449518071908/1025816268487532614/unknown.png"
+    },
+    {
+        "name": "It ain't much, but it's honest work",
+        "id": "aint-much-but-honest-work",
+        "src": "https://media.discordapp.net/attachments/910634449518071908/1025816993611395143/unknown.png"
+    },
+    {
+        "name": "Consider the following, shut the fuck up",
+        "id": "shut-the-fuck-up",
+        "src": "https://media.discordapp.net/attachments/910634449518071908/1025817434738933790/unknown.png"
     }
 ]

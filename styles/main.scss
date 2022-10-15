@@ -6,6 +6,7 @@
         2.1 Introduction
         2.2 Search
         2.3 Responses
+        2.4 Footer
  */
 
 // 1.1 Imports
@@ -117,4 +118,11 @@ body
             }
         }
     }
+}
+
+// 2.4 Footer
+#footer
+{
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
 }

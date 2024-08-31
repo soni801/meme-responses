@@ -27,7 +27,7 @@ function loadResponses(list)
     {
         responseList.innerHTML += `
         <div id="${response.id}" class="response">
-            <img src="${window.location}/media/${response.id}" alt="${response.name}" loading="lazy">
+            <img src="${window.location}/media/${response.id}.jpg" alt="${response.name}" loading="lazy">
             <div class="context">
                 <div class="naming">
                     <code>${response.id}</code>

@@ -254,5 +254,21 @@
     {
         "name": "No Bitches",
         "id": "no-bitches"
+    },
+    {
+        "name": "How Did We Get Here?",
+        "id": "how-did-we-get-here"
+    },
+    {
+        "name": "The douche store called, they're running out of you!",
+        "id": "douche-store-called"
+    },
+    {
+        "name": "All these flavors and you choose to be salty",
+        "id": "you-choose-to-be-salty"
+    },
+    {
+        "name": "Perhaps",
+        "id": "perhaps"
     }
 ]

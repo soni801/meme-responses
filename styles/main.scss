@@ -26,6 +26,16 @@ body
 #introduction
 {
     font-family: 'Rubik', sans-serif;
+
+    // Discord username
+    code
+    {
+        padding: 0 .5ch;
+        background: global.$superdark;
+        font-family: 'Fira Code', monospace;
+        border: 1px solid global.$mid;
+        border-radius: .2rem;
+    }
 }
 
 // 2.2 Search
@@ -46,6 +56,7 @@ body
         background: global.$mid;
         border: none;
         border-radius: .5rem;
+        font-family: 'Rubik', sans-serif;
         box-shadow: darken(global.$dark, 5) 0 0 1.2rem;
         line-height: 2em;
     }
@@ -55,7 +66,7 @@ body
 #response-list
 {
     margin: 2rem -2rem 2rem 2rem;
-    columns: 10 22rem;
+    columns: 10 21rem;
     font-family: 'Quicksand', sans-serif;
 
     .response // Individual responses in list
@@ -65,7 +76,7 @@ body
         height: max-content;
         margin-bottom: 2rem;
         background: global.$mid;
-        border-radius: 1rem;
+        border-radius: 2rem;
 
         img
         {
